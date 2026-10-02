@@ -1,0 +1,18 @@
+ADMIN UPDATE
+
+Database password: Same0909Same
+Admin username: fellowship
+Admin password: fellowship0909
+
+New features:
+- Beautiful responsive admin media manager: admin/media.php
+- Upload/delete ministry images, gallery images, and videos
+- Bilingual ministry editor: admin/ministries.php
+- Super-admin role enabled
+
+Upload directories:
+- assets/uploads/ministries/
+- assets/uploads/gallery/
+- assets/uploads/videos/
+
+Import database/admin_privileges.sql in phpMyAdmin if the fellowship account is not already present.

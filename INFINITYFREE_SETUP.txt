@@ -1,0 +1,35 @@
+DURAME CAMPUS FELLOWSHIP — INFINITYFREE SETUP
+
+DATABASE INFORMATION FROM THE PROVIDED SCREENSHOT
+MySQL Username: if0_42696741
+MySQL Database: if0_42696741_Durame
+MySQL Hostname: sql304.infinityfree.com
+MySQL Port: 3306
+
+IMPORTANT:
+The password in the screenshot is masked, so it cannot be read from the image.
+Open htdocs/includes/config.php and replace:
+CHANGE_TO_YOUR_INFINITYFREE_MYSQL_PASSWORD
+with your actual InfinityFree MySQL password.
+
+ADMIN LOGIN
+Username: fellowship
+Password: fellowship0909
+
+If the database already exists:
+1. Open phpMyAdmin for if0_42696741_Durame.
+2. Import database/update_admin_and_registration.sql.
+
+If installing from a new/empty database:
+1. Select if0_42696741_Durame in phpMyAdmin.
+2. Import database/schema.sql.
+
+SERVICE REGISTRATION
+Google Form: https://forms.gle/aLD5exQMyzwhhWXT8
+The navigation and homepage registration buttons open the form directly.
+
+LANGUAGE
+Every public page supports English and Amharic using the EN / አማ switch.
+
+CSS
+BASE_URL is intentionally empty and all assets use relative paths. This prevents the previous old-domain CSS problem.

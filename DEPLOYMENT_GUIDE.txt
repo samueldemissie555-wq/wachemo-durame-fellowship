@@ -1,0 +1,69 @@
+DURAME CAMPUS FELLOWSHIP - ADVANCED BUILD
+
+1. Upload the contents of htdocs/ to your InfinityFree htdocs/ folder.
+2. Edit htdocs/includes/config.php only if your MySQL password differs.
+3. In phpMyAdmin select database if0_42696741_Durame and import database/schema.sql.
+   If the tables already exist, use database/update_full_system.sql.
+4. Admin login:
+   Username: fellowship
+   Password: fellowship0909
+5. Open /admin/login.php.
+6. Use Media Manager to upload all page images.
+
+IMAGE DESTINATIONS
+Home Hero -> assets/images/hero/home.jpg
+About Hero -> assets/images/hero/about.jpg
+About Main Image -> assets/images/about/about.jpg
+Ministries Hero -> assets/images/hero/ministries.jpg
+Worship -> assets/images/ministries/worship.jpg
+Prayer -> assets/images/ministries/prayer.jpg
+Evangelism -> assets/images/ministries/evangelism.jpg
+Discipleship -> assets/images/ministries/discipleship.jpg
+Media -> assets/images/ministries/media.jpg
+Service -> assets/images/ministries/service.jpg
+Student Fellowship -> assets/images/ministries/student.jpg
+Outreach -> assets/images/ministries/outreach.jpg
+Events Hero -> assets/images/hero/events.jpg
+Sermons Hero -> assets/images/hero/sermons.jpg
+Resources Hero -> assets/images/hero/resources.jpg
+Gallery Hero -> assets/images/hero/gallery.jpg
+Prayer Hero -> assets/images/hero/prayer.jpg
+Contact Hero -> assets/images/hero/contact.jpg
+Contact Image -> assets/images/contact/contact.jpg
+Location Hero -> assets/images/hero/location.jpg
+Location Image -> assets/images/location/location.jpg
+Website Logo -> assets/images/logo/logo.png (extension can vary)
+Leadership 1-4 -> assets/images/leadership/leader-1.jpg etc.
+
+ADMIN FEATURES
+- Dashboard statistics and recent activity
+- Announcements CRUD
+- Events CRUD
+- Sermons CRUD with YouTube/direct video and audio URLs
+- Resources CRUD
+- Gallery album management
+- Image and video manager
+- Ministry CRUD and bilingual text
+- Prayer request inbox/status management
+- Contact message inbox/status management
+- Social links management
+- Website settings management
+- User/role management
+- CSRF tokens and prepared SQL statements
+- Upload validation and path traversal protection
+- Bilingual public pages
+- Direct Google Form service registration
+
+INFINITYFREE
+If uploads fail because of PHP upload limits, use smaller images/videos or increase the hosting limits if the plan permits. The application itself validates images up to 8 MB and videos up to 80 MB.
+
+WCUDC V3 DESIGN + FORM BUILDER
+==============================
+1. Import htdocs/database/schema.sql if setting up a fresh database. The schema now includes the custom form builder tables.
+2. If your existing database is already running, import htdocs/database/form_builder_v3.sql once.
+3. Service Registration now allows exactly ONE service-team choice. Mobilization is optional and limited to ONE choice.
+4. Admin > Form Builder lets super_admin/admin create unlimited custom forms for applications, registrations, surveys, prayer forms, event forms, etc.
+5. Published custom forms are available at: /form.php?slug=YOUR-SLUG
+6. Admin > Media Manager now shows actual image dimensions and file size. Images are processed to the exact display dimensions for their destination.
+7. The homepage and visual system are refined to follow the reference site's structure: premium hero, floating cards, quick-action strip, large editorial sections, scripture banner, gallery, prayer and service call-to-action.
+8. Always back up your current database and files before replacing the website.
