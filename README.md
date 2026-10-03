@@ -7,21 +7,21 @@ This build follows the supplied reference screenshot: compact white navigation, 
 - Direct database-backed Service Registration with Amharic/English form
 - Admin service registration management, ministry/team filters, edit/archive/delete and Print/Save-as-PDF export
 - InfinityFree database configuration for the supplied database
-- Admin account: ``
-- Admin password: ``
+- - Admin credentials are configured privately on the hosting server.
 - Responsive mobile navigation
 - Advanced CSS hover, card, hero and accessibility states
 - Relative CSS/JS URLs to avoid hard-coded-domain failures
 - Prayer request storage
 - Dynamic events, sermons, resources, albums and announcements when database data exists
 
-## Database
-The supplied screenshot shows:
-- Host: `sql304.infinityfree.com`
-- User: `if0_42696741`
-- Database: `if0_42696741_Durame`
 
-The screenshot hides the database password. Enter the real password in `includes/config.php` before uploading.
+## Database
+
+The website uses MySQL for dynamic content, registrations, forms, and administration.
+
+Database connection credentials are configured privately on the hosting server and are not stored in this public repository.
+
+Never publish database passwords or other private credentials in GitHub.
 
 ## Registration
 `register-service.php` stores Full Name, Department, Phone Number, Year, Services (Team), and Services (Mobilizations) directly in MySQL. Phone number is unique to prevent duplicate registrations.
