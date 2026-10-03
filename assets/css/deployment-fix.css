@@ -1,0 +1,6 @@
+
+/* WCUDC responsive/deployment compatibility layer */
+html,body{overflow-x:hidden}
+main{min-height:50vh}
+button,.btn,.nav-register,.quick-item,.ministry-card,.gallery-item{cursor:pointer}
+svg{max-width:100%;height:auto}
