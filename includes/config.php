@@ -11,11 +11,10 @@ if ($basePath === '.' || $basePath === '/') { $basePath = ''; }
 define('BASE_URL', $basePath);
 
 /* InfinityFree details supplied by the site owner. */
-define('DB_HOST', 'sql304.infinityfree.com');
-define('DB_NAME', 'if0_42696741_Durame');
-define('DB_USER', 'if0_42696741');
-/* Put the MySQL password shown/created in InfinityFree here. */
-define('DB_PASS', 'Same0909Same');
+define('DB_HOST', 'YOUR_DATABASE_HOST');
+define('DB_NAME', 'YOUR_DATABASE_NAME');
+define('DB_USER', 'YOUR_DATABASE_USER');
+define('DB_PASS', 'YOUR_DATABASE_PASSWORD');
 
 define('SERVICE_FORM_URL', 'register-service.php');
 define('UPLOAD_DIR', dirname(__DIR__) . '/uploads/');
