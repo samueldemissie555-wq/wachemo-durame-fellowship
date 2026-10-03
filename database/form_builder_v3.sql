@@ -1,0 +1,27 @@
+-- WCUDC Form Builder (MySQL 5.7 compatible)
+CREATE TABLE IF NOT EXISTS custom_forms (
+ id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ title VARCHAR(255) NOT NULL,
+ title_am VARCHAR(255) NULL,
+ description TEXT NULL,
+ description_am TEXT NULL,
+ slug VARCHAR(120) NOT NULL UNIQUE,
+ fields TEXT NOT NULL,
+ status ENUM('draft','published','archived') NOT NULL DEFAULT 'draft',
+ created_by INT UNSIGNED NULL,
+ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+ updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+ INDEX idx_custom_forms_status(status),
+ FOREIGN KEY(created_by) REFERENCES users(id) ON DELETE SET NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS custom_form_submissions (
+ id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ form_id INT UNSIGNED NOT NULL,
+ values_json LONGTEXT NOT NULL,
+ uploaded_files TEXT NULL,
+ ip_address VARCHAR(45) NULL,
+ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+ INDEX idx_cfs_form(form_id),
+ CONSTRAINT fk_cfs_form FOREIGN KEY(form_id) REFERENCES custom_forms(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
