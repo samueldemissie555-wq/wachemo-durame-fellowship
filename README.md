@@ -7,8 +7,8 @@ This build follows the supplied reference screenshot: compact white navigation, 
 - Direct database-backed Service Registration with Amharic/English form
 - Admin service registration management, ministry/team filters, edit/archive/delete and Print/Save-as-PDF export
 - InfinityFree database configuration for the supplied database
-- Admin account: `fellowship`
-- Admin password: `fellowship0909`
+- Admin account: ``
+- Admin password: ``
 - Responsive mobile navigation
 - Advanced CSS hover, card, hero and accessibility states
 - Relative CSS/JS URLs to avoid hard-coded-domain failures
